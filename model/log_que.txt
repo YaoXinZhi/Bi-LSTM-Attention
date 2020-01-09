@@ -1,0 +1,188 @@
+Namespace(attention_size=16, batch_size=16, bidirectional=True, dataset='ques', dropout=0.5, embed_dim=64, epochs=1000, hidden_size=32, label=True, load_path=None, logging_file='model/log_que.txt', loss_acc_save_file='model/ques_train_loss_acc.txt', lr=0.001, max_length=20, model_save_path='model/bilstm_attn_model.pt', momentum=0, opt='adam', output_size=6, save_loss_acc=True, seed=1314, start_end_symbol=True, train_data_path='data/question_clas/question.train.txt', use_cuda=False, valid_data_path='data/question_clas/question.valid.txt', vocab=None, vocab_size=None, weight_decay=0.001)
+train data size: 5259, dropped: 192, valid data size: 500, vocab_size: 8223, label num: 6
+init model done.
+------------------------------------------------------------------------------------------
+Namespace(attention_size=16, batch_size=16, bidirectional=True, dataset='ques', dropout=0.5, embed_dim=64, epochs=1000, hidden_size=32, label=True, load_path=None, logging_file='model/log_que.txt', loss_acc_save_file='model/ques_train_loss_acc.txt', lr=0.001, max_length=20, model_save_path='model/bilstm_attn_model.pt', momentum=0, opt='adam', output_size=6, save_loss_acc=True, seed=1314, start_end_symbol=True, train_data_path='data/question_clas/question.train.txt', use_cuda=False, valid_data_path='data/question_clas/question.valid.txt', vocab=None, vocab_size=None, weight_decay=0.001)
+train data size: 5259, dropped: 192, valid data size: 500, vocab_size: 8223, label num: 6
+init model done.
+------------------------------------------------------------------------------------------
+epoch-batch 1-32 | cost_time 1.12 | train_loss: 0.108699 | train_acc: 22
+epoch-batch 1-64 | cost_time 2.17 | train_loss: 0.103781 | train_acc: 25
+epoch-batch 1-96 | cost_time 3.23 | train_loss: 0.104255 | train_acc: 24
+epoch-batch 1-128 | cost_time 4.31 | train_loss: 0.102884 | train_acc: 31
+epoch-batch 1-160 | cost_time 5.35 | train_loss: 0.100163 | train_acc: 36
+epoch-batch 1-192 | cost_time 6.39 | train_loss: 0.093309 | train_acc: 40
+__________________________________________________________________________________________
+Exiting from training early.
+load best model.
+total_epoch   1 | total_time 7.99 s | loss 0.0291 | accurcy 89%(445/500)
+------------------------------------------------------------------------------------------
+Namespace(attention_size=16, batch_size=16, bidirectional=True, dataset='ques', dropout=0.5, embed_dim=64, epochs=1000, hidden_size=32, label=True, load_path=None, logging_file='model/log_que.txt', loss_acc_save_file='model/ques_train_loss_acc.txt', lr=0.001, max_length=20, model_save_path='model/bilstm_attn_model.pt', momentum=0, opt='adam', output_size=6, save_loss_acc=True, seed=1314, start_end_symbol=True, train_data_path='data/question_clas/question.train.txt', use_cuda=False, valid_data_path='data/question_clas/question.valid.txt', vocab=None, vocab_size=None, weight_decay=0.001)
+train data size: 5259, dropped: 192, valid data size: 500, vocab_size: 8223, label num: 6
+init model done.
+------------------------------------------------------------------------------------------
+epoch-batch 1-32 | cost_time 1.15 | train_loss: 0.108699 | train_acc: 22%, 
+epoch-batch 1-64 | cost_time 2.24 | train_loss: 0.103781 | train_acc: 47%, 
+epoch-batch 1-96 | cost_time 3.34 | train_loss: 0.104255 | train_acc: 72%, 
+epoch-batch 1-128 | cost_time 4.43 | train_loss: 0.102884 | train_acc: 103%, 
+epoch-batch 1-160 | cost_time 5.52 | train_loss: 0.100163 | train_acc: 140%, 
+epoch-batch 1-192 | cost_time 6.61 | train_loss: 0.093309 | train_acc: 181%, 
+epoch-batch 1-224 | cost_time 7.72 | train_loss: 0.087799 | train_acc: 227%, 
+epoch-batch 1-256 | cost_time 8.87 | train_loss: 0.080701 | train_acc: 277%, 
+__________________________________________________________________________________________
+Exiting from training early.
+load best model.
+total_epoch   1 | total_time 9.90 s | loss 0.0291 | accurcy 89%(445/500)
+------------------------------------------------------------------------------------------
+Namespace(attention_size=16, batch_size=16, bidirectional=True, dataset='ques', dropout=0.5, embed_dim=64, epochs=1000, hidden_size=32, label=True, load_path=None, logging_file='model/log_que.txt', loss_acc_save_file='model/ques_train_loss_acc.txt', lr=0.001, max_length=20, model_save_path='model/bilstm_attn_model.pt', momentum=0, opt='adam', output_size=6, save_loss_acc=True, seed=1314, start_end_symbol=True, train_data_path='data/question_clas/question.train.txt', use_cuda=False, valid_data_path='data/question_clas/question.valid.txt', vocab=None, vocab_size=None, weight_decay=0.001)
+train data size: 5259, dropped: 192, valid data size: 500, vocab_size: 8223, label num: 6
+init model done.
+------------------------------------------------------------------------------------------
+epoch-batch 1-32 | cost_time 1.12 | train_loss: 0.108699 | train_acc: 22%, 
+epoch-batch 1-64 | cost_time 2.18 | train_loss: 0.103781 | train_acc: 25%, 
+epoch-batch 1-96 | cost_time 3.23 | train_loss: 0.104255 | train_acc: 24%, 
+epoch-batch 1-128 | cost_time 4.29 | train_loss: 0.102884 | train_acc: 31%, 
+epoch-batch 1-160 | cost_time 5.36 | train_loss: 0.100163 | train_acc: 36%, 
+epoch-batch 1-192 | cost_time 6.42 | train_loss: 0.093309 | train_acc: 40%, 
+epoch-batch 1-224 | cost_time 7.49 | train_loss: 0.087799 | train_acc: 46%, 
+epoch-batch 1-256 | cost_time 8.54 | train_loss: 0.080701 | train_acc: 50%, 
+epoch-batch 1-288 | cost_time 9.59 | train_loss: 0.079790 | train_acc: 47%, 
+epoch-batch 1-320 | cost_time 10.66 | train_loss: 0.074355 | train_acc: 49%, 
+----------
+end_epoch   1 | cost_time 10.93 s | eval_loss 0.0710 | accurcy 60%(303/500)
+update best acc: 60%
+----------
+epoch-batch 2-24 | cost_time 12.04 | train_loss: 0.079390 | train_acc: 46%, 
+epoch-batch 2-56 | cost_time 13.09 | train_loss: 0.071370 | train_acc: 51%, 
+epoch-batch 2-88 | cost_time 14.15 | train_loss: 0.068379 | train_acc: 55%, 
+epoch-batch 2-120 | cost_time 15.22 | train_loss: 0.067703 | train_acc: 57%, 
+epoch-batch 2-152 | cost_time 16.26 | train_loss: 0.063640 | train_acc: 59%, 
+epoch-batch 2-184 | cost_time 17.33 | train_loss: 0.063333 | train_acc: 61%, 
+epoch-batch 2-216 | cost_time 18.37 | train_loss: 0.062124 | train_acc: 60%, 
+epoch-batch 2-248 | cost_time 19.42 | train_loss: 0.058858 | train_acc: 65%, 
+epoch-batch 2-280 | cost_time 20.49 | train_loss: 0.060049 | train_acc: 62%, 
+epoch-batch 2-312 | cost_time 21.55 | train_loss: 0.060606 | train_acc: 62%, 
+----------
+end_epoch   2 | cost_time 10.81 s | eval_loss 0.0541 | accurcy 70%(352/500)
+update best acc: 70%
+----------
+epoch-batch 3-16 | cost_time 22.94 | train_loss: 0.055615 | train_acc: 67%, 
+epoch-batch 3-48 | cost_time 23.99 | train_loss: 0.057154 | train_acc: 64%, 
+epoch-batch 3-80 | cost_time 25.05 | train_loss: 0.055080 | train_acc: 69%, 
+epoch-batch 3-112 | cost_time 26.11 | train_loss: 0.049918 | train_acc: 70%, 
+epoch-batch 3-144 | cost_time 27.17 | train_loss: 0.053670 | train_acc: 67%, 
+epoch-batch 3-176 | cost_time 28.21 | train_loss: 0.053669 | train_acc: 68%, 
+epoch-batch 3-208 | cost_time 29.27 | train_loss: 0.051110 | train_acc: 72%, 
+epoch-batch 3-240 | cost_time 30.33 | train_loss: 0.049041 | train_acc: 71%, 
+epoch-batch 3-272 | cost_time 31.38 | train_loss: 0.049165 | train_acc: 70%, 
+epoch-batch 3-304 | cost_time 32.44 | train_loss: 0.047672 | train_acc: 74%, 
+----------
+end_epoch   3 | cost_time 10.83 s | eval_loss 0.0483 | accurcy 74%(371/500)
+update best acc: 74%
+----------
+epoch-batch 4-8 | cost_time 33.83 | train_loss: 0.044724 | train_acc: 77%, 
+epoch-batch 4-40 | cost_time 34.89 | train_loss: 0.037844 | train_acc: 80%, 
+epoch-batch 4-72 | cost_time 35.96 | train_loss: 0.041316 | train_acc: 77%, 
+epoch-batch 4-104 | cost_time 37.01 | train_loss: 0.037471 | train_acc: 79%, 
+epoch-batch 4-136 | cost_time 38.06 | train_loss: 0.037619 | train_acc: 79%, 
+__________________________________________________________________________________________
+Exiting from training early.
+load best model.
+total_epoch   4 | total_time 39.39 s | loss 0.0483 | accurcy 74%(371/500)
+------------------------------------------------------------------------------------------
+Namespace(attention_size=16, batch_size=16, bidirectional=True, dataset='ques', dropout=0.5, embed_dim=64, epochs=1000, hidden_size=32, label=True, load_path=None, logging_file='model/log_que.txt', loss_acc_save_file='model/ques_train_loss_acc.txt', lr=0.001, max_length=20, model_save_path='model/bilstm_attn_model_ques.pt', momentum=0, opt='adam', output_size=6, save_loss_acc=True, seed=1314, start_end_symbol=True, train_data_path='data/question_clas/question.train.txt', use_cuda=False, valid_data_path='data/question_clas/question.valid.txt', vocab=None, vocab_size=None, weight_decay=0.001)
+train data size: 5259, dropped: 192, valid data size: 500, vocab_size: 8223, label num: 6
+init model done.
+------------------------------------------------------------------------------------------
+epoch-batch 1-32 | cost_time 1.67 | train_loss: 0.108699 | train_acc: 22%
+epoch-batch 1-64 | cost_time 2.75 | train_loss: 0.103781 | train_acc: 25%
+epoch-batch 1-96 | cost_time 3.84 | train_loss: 0.104255 | train_acc: 24%
+epoch-batch 1-128 | cost_time 4.91 | train_loss: 0.102884 | train_acc: 31%
+epoch-batch 1-160 | cost_time 5.99 | train_loss: 0.100163 | train_acc: 36%
+epoch-batch 1-192 | cost_time 7.07 | train_loss: 0.093309 | train_acc: 40%
+__________________________________________________________________________________________
+Exiting from training early.
+load best model.
+Namespace(attention_size=16, batch_size=16, bidirectional=True, dataset='ques', dropout=0.5, embed_dim=64, epochs=1000, hidden_size=32, label=True, load_path=None, logging_file='model/log_que.txt', loss_acc_save_file='model/ques_train_loss_acc.txt', lr=0.001, max_length=20, model_save_path='model/bilstm_attn_model_ques.pt', momentum=0, opt='adam', output_size=6, save_loss_acc=True, seed=1314, start_end_symbol=True, train_data_path='data/question_clas/question.train.txt', use_cuda=False, valid_data_path='data/question_clas/question.valid.txt', vocab=None, vocab_size=None, weight_decay=0.001)
+train data size: 5259, dropped: 192, valid data size: 500, vocab_size: 8223, label num: 6
+init model done.
+------------------------------------------------------------------------------------------
+epoch-batch 1-32 | cost_time 1.11 | train_loss: 0.108699 | train_acc: 22%
+epoch-batch 1-64 | cost_time 2.19 | train_loss: 0.103781 | train_acc: 25%
+epoch-batch 1-96 | cost_time 3.25 | train_loss: 0.104255 | train_acc: 24%
+epoch-batch 1-128 | cost_time 4.32 | train_loss: 0.102884 | train_acc: 31%
+epoch-batch 1-160 | cost_time 5.40 | train_loss: 0.100163 | train_acc: 36%
+epoch-batch 1-192 | cost_time 6.46 | train_loss: 0.093309 | train_acc: 40%
+epoch-batch 1-224 | cost_time 7.52 | train_loss: 0.087799 | train_acc: 46%
+epoch-batch 1-256 | cost_time 8.60 | train_loss: 0.080701 | train_acc: 50%
+epoch-batch 1-288 | cost_time 9.66 | train_loss: 0.079790 | train_acc: 47%
+epoch-batch 1-320 | cost_time 10.72 | train_loss: 0.074355 | train_acc: 49%
+----------
+end_epoch   1 | cost_time 10.99 s | eval_loss 0.0710 | accurcy 60%(303/500)
+update best acc: 60%
+----------
+epoch-batch 2-24 | cost_time 12.16 | train_loss: 0.079390 | train_acc: 46%
+epoch-batch 2-56 | cost_time 13.21 | train_loss: 0.071370 | train_acc: 51%
+epoch-batch 2-88 | cost_time 14.27 | train_loss: 0.068379 | train_acc: 55%
+epoch-batch 2-120 | cost_time 15.32 | train_loss: 0.067703 | train_acc: 57%
+epoch-batch 2-152 | cost_time 16.37 | train_loss: 0.063640 | train_acc: 59%
+epoch-batch 2-184 | cost_time 17.43 | train_loss: 0.063333 | train_acc: 61%
+epoch-batch 2-216 | cost_time 18.49 | train_loss: 0.062124 | train_acc: 60%
+epoch-batch 2-248 | cost_time 19.55 | train_loss: 0.058858 | train_acc: 65%
+epoch-batch 2-280 | cost_time 20.62 | train_loss: 0.060049 | train_acc: 62%
+__________________________________________________________________________________________
+Exiting from training early.
+load best model.
+total_epoch   2 | total_time 21.48 s | loss 0.0710 | accurcy 60%(303/500)
+------------------------------------------------------------------------------------------
+Namespace(attention_size=16, batch_size=16, bidirectional=True, dataset='ques', dropout=0.5, embed_dim=64, epochs=1000, hidden_size=32, label=True, load_path=None, logging_file='model/log_que.txt', loss_acc_save_file='model/ques_train_loss_acc.txt', lr=0.001, max_length=20, model_save_path='model/bilstm_attn_model_ques.pt', momentum=0, opt='adam', output_size=6, save_loss_acc=True, seed=1314, start_end_symbol=True, train_data_path='data/question_clas/question.train.txt', use_cuda=False, valid_data_path='data/question_clas/question.valid.txt', vocab=None, vocab_size=None, weight_decay=0.001)
+train data size: 5259, dropped: 192, valid data size: 500, vocab_size: 8223, label num: 6
+init model done.
+------------------------------------------------------------------------------------------
+epoch-batch 1-32 | cost_time 1.10 | train_loss: 0.108699 | train_acc: 22%
+epoch-batch 1-64 | cost_time 2.18 | train_loss: 0.103781 | train_acc: 25%
+epoch-batch 1-96 | cost_time 3.23 | train_loss: 0.104255 | train_acc: 24%
+epoch-batch 1-128 | cost_time 4.29 | train_loss: 0.102884 | train_acc: 31%
+epoch-batch 1-160 | cost_time 5.36 | train_loss: 0.100163 | train_acc: 36%
+epoch-batch 1-192 | cost_time 6.40 | train_loss: 0.093309 | train_acc: 40%
+epoch-batch 1-224 | cost_time 7.45 | train_loss: 0.087799 | train_acc: 46%
+epoch-batch 1-256 | cost_time 8.52 | train_loss: 0.080701 | train_acc: 50%
+epoch-batch 1-288 | cost_time 9.57 | train_loss: 0.079790 | train_acc: 47%
+epoch-batch 1-320 | cost_time 10.62 | train_loss: 0.074355 | train_acc: 49%
+----------
+end_epoch   1 | cost_time 10.91 s | eval_loss 0.0710 | accurcy 60%(303/500)
+update best acc: 60%
+----------
+epoch-batch 2-24 | cost_time 12.03 | train_loss: 0.079390 | train_acc: 46%
+epoch-batch 2-56 | cost_time 13.07 | train_loss: 0.071370 | train_acc: 51%
+epoch-batch 2-88 | cost_time 14.14 | train_loss: 0.068379 | train_acc: 55%
+__________________________________________________________________________________________
+Exiting from training early.
+load best model.
+total_epoch   2 | total_time 15.17 s | loss 0.0710 | accurcy 60%(303/500)
+------------------------------------------------------------------------------------------
+Namespace(attention_size=16, batch_size=16, bidirectional=True, dataset='ques', dropout=0.5, embed_dim=64, epochs=1000, hidden_size=32, label=True, load_path=None, logging_file='model/log_que.txt', lr=0.001, max_length=20, model_save_path='model/bilstm_attn_model_ques.pt', momentum=0, opt='adam', output_size=6, save_loss_acc=True, seed=1314, start_end_symbol=True, train_data_path='data/question_clas/question.train.txt', train_loss_acc_save_file='model/ques_train_loss_acc.txt', use_cuda=False, valid_data_path='data/question_clas/question.valid.txt', valid_loss_acc_save_file='model/ques_valid_loss_acc.txt', vocab=None, vocab_size=None, weight_decay=0.001)
+train data size: 5259, dropped: 192, valid data size: 500, vocab_size: 8223, label num: 6
+init model done.
+------------------------------------------------------------------------------------------
+epoch-batch 1-32 | cost_time 1.11 | train_loss: 0.108699 | train_acc: 22%
+epoch-batch 1-64 | cost_time 2.48 | train_loss: 0.103781 | train_acc: 25%
+epoch-batch 1-96 | cost_time 3.89 | train_loss: 0.104255 | train_acc: 24%
+epoch-batch 1-128 | cost_time 5.27 | train_loss: 0.102884 | train_acc: 31%
+epoch-batch 1-160 | cost_time 6.69 | train_loss: 0.100163 | train_acc: 36%
+epoch-batch 1-192 | cost_time 8.08 | train_loss: 0.093309 | train_acc: 40%
+epoch-batch 1-224 | cost_time 9.46 | train_loss: 0.087799 | train_acc: 46%
+epoch-batch 1-256 | cost_time 10.85 | train_loss: 0.080701 | train_acc: 50%
+epoch-batch 1-288 | cost_time 12.21 | train_loss: 0.079790 | train_acc: 47%
+epoch-batch 1-320 | cost_time 13.61 | train_loss: 0.074355 | train_acc: 49%
+----------
+end_epoch   1 | cost_time 14.20 s | eval_loss 0.0710 | accurcy 60%(303/500)
+update best acc: 60%
+----------
+epoch-batch 2-24 | cost_time 15.33 | train_loss: 0.079390 | train_acc: 46%
+epoch-batch 2-56 | cost_time 16.74 | train_loss: 0.071370 | train_acc: 51%
+__________________________________________________________________________________________
+Exiting from training early.
+load best model.
+total_epoch   2 | total_time 17.09 s | loss 0.0710 | accurcy 60%(303/500)
+------------------------------------------------------------------------------------------
