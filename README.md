@@ -23,5 +23,5 @@ python main_attention_lstm.py --dataset ag --save_loss_acc
 
 结果可视化代码也在了 直接修改注释的行 然后run就行。
 
-如果要用改代码 点一个stat 
+如果要用改代码 点一个star
 Merci ！
